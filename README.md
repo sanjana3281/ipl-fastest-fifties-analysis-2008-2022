@@ -31,8 +31,7 @@ SELECT player, bf
   ORDER BY bf ASC
   LIMIT 1
 Finding: Pat Cummins
-
- ###4. Which year had the most fastest fifties?
+### 4. Which year had the most fastest fifties? 
  SELECT 
         SUBSTR(match_date, -4) as year,
         COUNT(*) as total
