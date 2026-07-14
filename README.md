@@ -6,14 +6,14 @@ IPL Complete Dataset 2008-2022 from Kaggle — 1484 records of fastest fifties s
 ## Questions & Findings
 
 ### 1. Who scored the most fastest fifties?
-SELECT 
-       against,
-       count(*) as num
-    FROM fastest_fifties_all
-    GROUP BY against 
-    order by num desc
-    limit 1
-Finding: David Warner
+'''sql
+SELECT player, COUNT(*) as total
+FROM fastest_fifties_all
+GROUP BY player
+ORDER BY total DESC
+LIMIT 1
+'''
+***Finding**: David Warner
 
 ### 2. Which ground hosted the most fastest fifties?
 SELECT 
